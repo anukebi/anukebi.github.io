@@ -1,0 +1,691 @@
+:root {
+    --primary-color: #2D3748;
+    --accent-color: #4299E1;
+    --text-color: #1A202C;
+    --light-text: #FFFFFF;
+    --background: #F7FAFC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--light-text);
+}
+
+.logo .highlight {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+.phone-btn {
+    background: var(--accent-color);
+    color: var(--light-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.phone-btn:hover {
+    background: #2B6CB0;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-content .highlight {
+    color: var(--accent-color);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: var(--accent-color);
+    color: var(--light-text);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background: #2B6CB0;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-decoration: none; 
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+/* ... (Previous CSS remains the same until the hero section) ... */
+
+.about-section {
+    padding: 100px 0;
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-section h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.features-list i {
+    color: #22C55E;
+    font-size: 1.2rem;
+}
+
+/* Responsive design for about section */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image, .about-text {
+        width: 100%;
+    }
+}
+
+/* Add smooth scrolling to the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust section padding to account for fixed header */
+section {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+/* ... (Previous CSS remains the same) ... */
+
+.services-section {
+    padding: 100px 0;
+    background-color: #f8fafc;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.service-card h3 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    min-height: 2.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card p {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive design for services section */
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ... (Previous CSS remains the same) ... */
+
+.fleet-section {
+    padding: 100px 0;
+    background-color: var(--background);
+}
+
+.vehicle-gallery {
+    margin-top: 3rem;
+}
+
+.gallery-main {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-thumbnails img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-thumbnails img:hover {
+    transform: scale(1.05);
+}
+
+.vehicle-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-info h3 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+}
+
+.specs-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.specs-list i {
+    color: var(--accent-color);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    width: 24px;
+}
+
+/* Responsive design for fleet section */
+@media (max-width: 768px) {
+    .gallery-main {
+        height: 300px;
+    }
+
+    .gallery-thumbnails {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .gallery-thumbnails img {
+        height: 80px;
+    }
+}
+.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Changed to 4 columns for better layout with 8 images */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-thumbnails img {
+    width: 100%;
+    height: 120px; /* Adjusted height for better thumbnail display */
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-thumbnails img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design updates */
+@media (max-width: 992px) {
+    .gallery-thumbnails {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .gallery-thumbnails img {
+        height: 100px;
+    }
+}
+/* ... (Previous CSS remains the same until fleet section) ... */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 450px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.prev {
+    left: 20px;
+}
+
+.carousel-button.next {
+    right: 20px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        height: 300px;
+    }
+
+    .carousel-button {
+        width: 35px;
+        height: 35px;
+    }
+}
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: var(--background);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.contact-info, .contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .contact-form h3 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.info-item {
+    margin-bottom: 1.5rem;
+}
+
+.info-item h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.info-item a, .info-item p {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: var(--accent-color);
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    background: white;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a0aec0;
+}
+
+.send-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--accent-color);
+    color: var(--light-text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background: #2B6CB0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact-info, .contact-form {
+        padding: 1.5rem;
+    }
+}
