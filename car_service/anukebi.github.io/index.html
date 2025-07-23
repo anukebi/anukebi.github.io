@@ -17,18 +17,18 @@
                 <span class="highlight"></span>
             </div>
             <div class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#fleet">Gallery</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="active" data-i18n="home">Home</a>
+                <a href="#about" data-i18n="about">About Us</a>
+                <a href="#services" data-i18n="services">Services</a>
+                <a href="#fleet" data-i18n="gallery">Gallery</a>
+                <a href="#contact" data-i18n="contact">Contact</a>
                 <a href="tel:+995555282905" class="phone-btn">
                     <i class="fas fa-phone"></i>
                     555 28 29 05
                 </a>
 
-                <div class="language">
-                    <span>EN</span>
+                <div class="language" id="language-toggle">
+                    <span id="current-lang">EN</span>
                     <i class="fas fa-globe"></i>
                 </div>
             </div>
@@ -37,32 +37,32 @@
 
    <main id="home" class="hero">
     <div class="hero-content">
-        <h1>Professional Furniture <span class="highlight">&</span> Cargo Transportation</h1>
-        <p>Fast, secure, and high-quality moving services in Tbilisi and across all of Georgia. We handle everything with care — from small furniture to large cargo.</p>
-        <a href="#contact" class="cta-button">Contact Us</a>
+        <h1 data-i18n="hero-title">Professional Furniture <span class="highlight">&</span> Cargo Transportation</h1>
+        <p data-i18n="hero-subtitle">Fast, secure, and high-quality moving services in Tbilisi and across all of Georgia. We handle everything with care — from small furniture to large cargo.</p>
+        <a href="#contact" class="cta-button" data-i18n="contact-us">Contact Us</a>
     </div>
 </main>
 
 
     <section id="about" class="about-section">
     <div class="container">
-        <h2>Our Experience at Your Service</h2>
-        <p class="subtitle">With years of hands-on experience, we provide reliable, careful, and professional moving services tailored to your needs.</p>
+        <h2 data-i18n="about-title">Our Experience at Your Service</h2>
+        <p class="subtitle" data-i18n="about-subtitle">With years of hands-on experience, we provide reliable, careful, and professional moving services tailored to your needs.</p>
         
         <div class="about-content">
             <div class="about-image">
                 <img src="assets/4273237.jpg" alt="Furniture and cargo transport in Georgia">
             </div>
             <div class="about-text">
-                <h3>Why Gadazidva.GE?</h3>
-                <p>Company, <span class="highlight">Gadazidva.GE</span>, was founded in <strong>2010</strong>. Since then, we’ve built a strong reputation by helping hundreds of satisfied clients move safely and efficiently throughout Georgia.</p>
+                <h3 data-i18n="why-title">Why Gadazidva.GE?</h3>
+                <p data-i18n="company-desc">Company, <span class="highlight">Gadazidva.GE</span>, was founded in <strong>2010</strong>. Since then, we’ve built a strong reputation by helping hundreds of satisfied clients move safely and efficiently throughout Georgia.</p>
                 
-                <p>We operate with <strong>reliable and well-maintained vehicles</strong>, perfectly suited for furniture and cargo moves of all sizes. Our small but dedicated team ensures personal attention and careful handling every step of the way.</p>
+                <p data-i18n="vehicle-desc">We operate with <strong>reliable and well-maintained vehicles</strong>, perfectly suited for furniture and cargo moves of all sizes. Our small but dedicated team ensures personal attention and careful handling every step of the way.</p>
                 
                 <ul class="features-list">
-                    <li><i class="fas fa-check-circle"></i> Available 24/7 — we work on your schedule</li>
-                    <li><i class="fas fa-check-circle"></i> Personalized service tailored to your needs</li>
-                    <li><i class="fas fa-check-circle"></i> 2100+ successful deliveries completed</li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-1">Available 24/7 — we work on your schedule</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-2">Personalized service tailored to your needs</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-3">2100+ successful deliveries completed</span></li>
                 </ul>
             </div>
         </div>
@@ -88,8 +88,8 @@
     </script>
      <section id="services" class="services-section">
     <div class="container">
-        <h2>Our Services</h2>
-        <p class="subtitle">Reliable and personalized moving services for individuals and businesses.</p>
+        <h2 data-i18n="services-title">Our Services</h2>
+        <p class="subtitle" data-i18n="services-subtitle">Reliable and personalized moving services for individuals and businesses.</p>
         
         <div class="services-grid">
             <!-- First Row -->
@@ -97,32 +97,32 @@
                 <div class="service-icon">
                     <i class="fas fa-comments-dollar"></i>
                 </div>
-                <h3>Free Consultation</h3>
-                <p>Get expert guidance and a custom plan — at no extra charge.</p>
+                <h3 data-i18n="service-1-title">Free Consultation</h3>
+                <p data-i18n="service-1-desc">Get expert guidance and a custom plan — at no extra charge.</p>
             </div>
 
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-users"></i>
                 </div>
-                <h3>Skilled Labor Hire</h3>
-                <p>Trained, dependable workers available to support your move.</p>
+                <h3 data-i18n="service-2-title">Skilled Labor Hire</h3>
+                <p data-i18n="service-2-desc">Trained, dependable workers available to support your move.</p>
             </div>
 
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-couch"></i>
                 </div>
-                <h3>Furniture Assembly &amp; Disassembly</h3>
-                <p>Professional handling of all types of furniture, with care and precision.</p>
+                <h3 data-i18n="service-3-title">Furniture Assembly &amp; Disassembly</h3>
+                <p data-i18n="service-3-desc">Professional handling of all types of furniture, with care and precision.</p>
             </div>
 
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-home"></i>
                 </div>
-                <h3>Home &amp; Office Relocation</h3>
-                <p>Smooth and stress-free moving service for apartments, houses, offices, and warehouses.</p>
+                <h3 data-i18n="service-4-title">Home &amp; Office Relocation</h3>
+                <p data-i18n="service-4-desc">Smooth and stress-free moving service for apartments, houses, offices, and warehouses.</p>
             </div>
 
             <!-- Second Row -->
@@ -130,16 +130,16 @@
                 <div class="service-icon">
                 <i class="fas fa-music"></i>
                 </div>
-                <h3>Piano & Grand Piano Transport</h3>
-                <p>Specialized equipment and expertise for transporting delicate instruments.</p>
+                <h3 data-i18n="service-5-title">Piano & Grand Piano Transport</h3>
+                <p data-i18n="service-5-desc">Specialized equipment and expertise for transporting delicate instruments.</p>
             </div>
 
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-vault"></i>
                 </div>
-                <h3>Safe &amp; ATM Moving</h3>
-                <p>Careful relocation of heavy and valuable items.</p>
+                <h3 data-i18n="service-6-title">Safe &amp; ATM Moving</h3>
+                <p data-i18n="service-6-desc">Careful relocation of heavy and valuable items.</p>
             </div>
         </div>
     </div>
@@ -148,8 +148,8 @@
 
 <section id="fleet" class="fleet-section">
     <div class="container">
-        <h2>Vehicle Gallery</h2>
-        <p class="subtitle">Our reliable vehicle for your transportation needs</p>
+        <h2 data-i18n="gallery-title">Vehicle Gallery</h2>
+        <p class="subtitle" data-i18n="gallery-subtitle">Our reliable vehicle for your transportation needs</p>
         
         <div class="carousel-container">
             <div class="carousel-wrapper">
@@ -190,19 +190,19 @@
         </div>
 
         <div class="vehicle-info">
-            <h3>Transport Vehicle Details</h3>
+            <h3 data-i18n="vehicle-details">Transport Vehicle Details</h3>
             <ul class="specs-list">
                 <li>
                     <i class="fas fa-weight-hanging"></i>
-                    <span>Load Capacity: 1000kg</span>
+                    <span data-i18n="load-capacity">Load Capacity: 1000kg</span>
                 </li>
                 <li>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Price: Negotiable</span>
+                    <span data-i18n="price">Price: Negotiable</span>
                 </li>
                 <li>
                     <i class="fas fa-road"></i>
-                    <span>All around Georgia: Available on request</span>
+                    <span data-i18n="coverage">All around Georgia: Available on request</span>
                 </li>
             </ul>
         </div>
@@ -210,34 +210,34 @@
 </section>
 <section id="contact" class="contact-section">
     <div class="container">
-        <h2>Contact Us</h2>
-        <p class="subtitle">We are ready to answer all your questions and help you organize your shipment.</p>
+        <h2 data-i18n="contact-title">Contact Us</h2>
+        <p class="subtitle" data-i18n="contact-subtitle">We are ready to answer all your questions and help you organize your shipment.</p>
 
         <div class="contact-grid">
             <!-- Contact Information -->
             <div class="contact-info">
-                <h3>Contact Information</h3>
+                <h3 data-i18n="contact-info-title">Contact Information</h3>
                 
                 <div class="info-item">
-                    <h4>Phone:</h4>
+                    <h4 data-i18n="phone-label">Phone:</h4>
                     <div class="phone-numbers">
                         <a href="tel:599868586">555 28 29 05</a>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <h4>Email:</h4>
+                    <h4 data-i18n="email-label">Email:</h4>
                     <a href="mailto:anamaria.chumburidze111@gmail.com">anamaria.chumburidze111@gmail.com</a>
                 </div>
 
                 <div class="info-item">
-                    <h4>Facebook:</h4>
+                    <h4 data-i18n="facebook-label">Facebook:</h4>
                     <a href="#" target="_blank">Gadazidva.GE</a>
                 </div>
 
                 <div class="info-item">
-                    <h4>Address:</h4>
-                    <p>Tbilisi, Georgia</p>
+                    <h4 data-i18n="address-label">Address:</h4>
+                    <p data-i18n="address">Tbilisi, Georgia</p>
                 </div>
             </div>
 
@@ -248,7 +248,7 @@
 <script src="script.js"></script>
     <footer>
         <div class="container">
-            <p>&copy; 2023 Gadazidva.GE. All rights reserved.</p>
+            <p data-i18n="footer-text">&copy; 2023 Gadazidva.GE. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
